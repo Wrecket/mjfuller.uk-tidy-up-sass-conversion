@@ -1,0 +1,537 @@
+/* general styling */
+html,
+body {
+	height: 100%;
+	transition: 5s all;
+	scroll-behavior: smooth;
+}
+
+.skill-icon {
+	width: 50px;
+}
+
+.project-btn {
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+	width: 100%;
+}
+
+.project {
+	opacity: 1;
+	transition: opacity 1000ms;
+}
+
+.skybanner {
+	height: auto!important;
+	overflow: hidden;
+	background-image: url("../img/clouds.jpg");
+	background-attachment: fixed;
+}
+
+a:hover {
+	color: rgb(241, 174, 50) !important;
+}
+
+a {
+	color: black !important;
+}
+
+button a:hover {
+	color: white;
+}
+
+.star {
+	width: 30px;
+	height: 30px;
+}
+
+.starline {
+	display: flex;  
+  }
+
+.cloud-text {
+	font-size: 5em;
+	color: white;
+}
+
+/* containers */
+.float-proj {
+	position: relative;
+	z-index: 9999999999;
+}
+.portrait-container-outer {
+	background-color: rgb(241, 174, 50);
+	width: auto !important;
+	height: auto !important;
+}
+
+.skills-title {
+	width: 15%;
+}
+
+#project-description {
+	height: auto !important;
+	background-color: rgba(93, 100, 91, 0.075);
+	position: relative;
+	transition: 5s all;
+}
+
+.img-container {
+	border-radius: 50% !important;
+	overflow: hidden;
+	width: 15em;
+	position: relative;
+	transition: 1s all;
+}
+
+.img-container:hover {
+	transform : scale(1.1);
+}
+.tag {
+	width: 100%;
+	height: 3rem;
+	background-color: rgba(255, 255, 255, 0.767);
+	position: absolute;
+	top: 40%;
+}
+
+.project-image-container {
+	width: 150rem;
+}
+
+.col-6 {
+	max-width: 100% !important;
+}
+
+.project-image {
+	width: 90%;
+}
+
+.portrait-container {
+	width: 60%;
+	border-top-right-radius: 60%;
+	overflow: hidden;
+}
+
+.contact-box {
+	justify-content: center;
+	align-items: center;
+}
+
+.padder {
+	height: 50px;
+}
+
+.skills-container {
+	background-color: rgba(128, 128, 128, 0.11);
+}
+
+.skills-header {
+	background-color: rgba(128, 128, 128, 0.11);
+}
+
+.toolbox {
+	display: block;
+	width: 100%;
+	height: 30%;
+	padding: 10px 110px!important;
+	white-space: nowrap;
+}
+/* reuseable code */
+.blank {
+	opacity: 0;
+}
+.whitebar {
+	width: 100%;
+	height: 5px;
+	background-color: white;
+}
+
+.orangebar {
+	width: 100%;
+	height: 5px;
+	background-color: rgb(247, 180, 57);
+}
+.mobile {
+	display: none;
+} 
+
+.font {
+	font-family: 'Raleway', sans-serif;
+}
+
+.bg-blue {
+	background-color: rgba(218, 218, 218, 0.212);
+}
+
+.bg-red {
+	background-color: rgba(255, 0, 0, 0.014);
+}
+
+.n-border {
+	border-top: 5px solid rgba(124, 124, 124, 0.219);
+	border-right: 10px solid rgba(124, 124, 124, 0.219);
+}
+
+.color {
+	color: rgb(255, 196, 0);
+}
+
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+.line-red {
+	width: 100%;
+	height: 2px;
+	background-color: rgba(93, 100, 91, 0.5);
+}
+.hide {
+	display: none;
+}
+
+.large-1 {
+	font-size: 5rem;
+}
+
+.large-2 {
+	font-size: 3rem;
+}
+
+/* animation */
+
+.float-tec {
+	height: 100vh;
+	position: relative;
+	background-image: url("../img/clouds.jpg")!important;
+	background-size: cover;
+	background-attachment: fixed;
+  }
+
+  .proj-img-container {
+	  width: 50%;
+	  margin-right: 0!important;
+	  padding-right: 0!important;
+  }
+
+  .phone1 {
+	width: 100px !important;
+	left: 2% ;
+	bottom: 38% ;
+	position: absolute ;
+	transform: rotate(2deg);
+  }
+
+  .phone2 {
+	width: 100px !important;
+	position: absolute;
+	left: 12%;
+	bottom: 65%;
+	transform: rotate(-3deg);
+  }
+
+  .phone3 {
+	width: 100px !important;
+	position: absolute;
+	left: 21%;
+	bottom: 37%;
+	transform: rotate(-8deg);
+  }
+
+  .phone4 {
+	width: 100px !important;
+	position: absolute;
+	left: 13%;
+	bottom: 18%;
+	transform: rotate(10deg);
+  }
+
+ .x1 {
+	animation: MoveUpDown1 6s linear infinite !important;
+	transition: all 8s !important;
+  }
+
+  .x2 {
+	animation: MoveUpDown2 4s linear infinite !important;
+	transition: all 10s !important;
+	
+  }
+
+  .x3 {
+	animation: MoveUpDown3 2s linear infinite !important;
+	transition: all 6s !important;
+	
+  }
+
+  .x4 {
+	animation: MoveUpDown4 5s linear infinite !important;
+	transition: all 3s !important;
+  }
+  
+  @keyframes MoveUpDown1 {
+	0%, 100% {
+	  left: 2%;
+	}
+	50% {
+	  bottom: 40%;
+	}
+  }
+
+  @keyframes MoveUpDown2 {
+	0%, 100% {
+	  left: 12%;
+	}
+	50% {
+	  bottom: 64%;
+	}
+	
+  }
+
+  @keyframes MoveUpDown3 {
+	0%, 100% {
+	  left: 21%;
+	}
+	50% {
+	  bottom: 36%;
+	}
+  }
+
+  @keyframes MoveUpDown4 {
+	0%, 100% {
+	  left: 13%;
+	}
+	50% {
+	  bottom: 16%;
+	}
+  }
+
+  #projects {
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+ }
+
+ /* media */
+@media (max-width: 1024px) {
+	.starline {
+		display: block;  
+		text-align: right;
+	  }
+	.img-container {
+		margin-left: auto!important;
+		margin-right: auto!important;
+	}
+	.proj-desc {
+		position: absolute;
+		bottom: 46%;
+		right: 4%;
+		width: 50%;
+	}
+	.phone4 {
+		width: 100px !important;
+		position: absolute;
+		left: 11%;
+		bottom: 12%;
+		transform: rotate(10deg);
+	}
+	.proj-img-container {
+		width: 75%;
+	}
+	@keyframes MoveUpDown4 {
+		0%, 100% {
+		  left: 10%;
+		}
+		50% {
+		  bottom: 10%;
+		}
+	  }
+}
+
+ @media (max-width: 850px) {
+	 #description {
+		 margin-bottom: -12rem;
+		 margin-right: 2rem;
+		 margin-top: 3rem;
+	 }
+	.starline {
+		display: block;  
+		text-align: center;
+		margin-left: auto;
+	  }
+	  .star {
+		  margin-left: 0!important;
+		  width: 20px;
+		  height: 20px;
+	  }
+	  .starry {
+		  justify-content: center;
+	  }
+	  .star-row {
+		  padding-bottom: 3rem;
+	  }
+
+	  .mob-bottom {
+		  margin-bottom: 3rem;
+	  }
+
+	.mobile {
+		display: inline-block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.svg-line {
+		/* display: inline-block!important;; */
+		flex-wrap: wrap;
+	}
+
+	.skillbox {
+		width: 30%;
+		margin: 1%;
+		padding: 0 1%;
+		
+	}
+	
+	.skills-container {
+		padding: 0!important;
+		height: auto!important;
+	}
+	
+	.toolbox {
+		padding: 2% 10%!important;
+	}
+
+	.img-container {
+		margin-left: auto!important;
+		margin-right: auto!important;
+	}
+
+	.large-1 {
+		font-size: 3rem;
+		white-space: nowrap	;
+	}
+
+	.phone1 {
+		width: 80px !important;
+		left: 2%;
+		bottom: 5%;
+		position: absolute;
+		transform: none;
+	  }
+	
+	  .phone2 {
+		width: 80px !important;
+		position: absolute;
+		left: 52%;
+		bottom: 5%;
+		transform: none;
+	  }
+	
+	  .phone3 {
+		width: 80px !important;
+		position: absolute;
+		left: 77%;
+		bottom: 5%;
+		transform: none;
+	  }
+	
+	  .phone4 {
+		width: 80px !important;
+		position: absolute;
+		left: 27%;
+		bottom: 5%;
+		transform: none;
+	  }
+
+	  .x1 {
+		animation: none !important;
+		transition: all 8s !important;
+	  }
+	
+	  .x2 {
+		animation: none !important;
+		transition: all 10s !important;
+	  }
+	
+	  .x3 {
+		animation: none !important;
+		transition: all 6s !important;
+	  }
+	
+	  .x4 {
+		animation: none !important;
+		transition: all 3s !important;
+	  }
+
+	  @keyframes MoveUpDown1 {
+		0%, 100% {
+		  left: 5%;
+		}
+		50% {
+		  bottom: 0;
+		}
+	  }
+	
+	  @keyframes MoveUpDown2 {
+		0%, 100% {
+		  left: 15%;
+		}
+		50% {
+		  bottom: 0;
+		}
+		
+	  }
+	
+	  @keyframes MoveUpDown3 {
+		0%, 100% {
+		  left: 20%;
+		}
+		50% {
+		  bottom: 0;
+		}
+	  }
+	
+	  @keyframes MoveUpDown4 {
+		0%, 100% {
+		  left: 25%;
+		}
+		50% {
+		  bottom: 0;
+		}
+	  }
+
+	  .float-tec {
+		  height: 70rem !important;
+	  }
+
+	  .proj-img-container {
+		  width: 100% !important;
+	  }
+
+	  .toolbox {
+		  margin-bottom: 5%;
+		  margin-top: 5%;
+	  }
+	  .proj-desc {
+		  width: 90%;
+		  bottom: 50%;
+	  }
+}

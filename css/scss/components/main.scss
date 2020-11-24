@@ -1,0 +1,82 @@
+.main {
+    &__wrap {
+        background-color: rgba(212, 212, 212, 0.329);
+        justify-content: center;
+        padding: 3rem 0;
+    }
+    &__orb-desc-wrap {
+        margin-top: 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    &__orb-img-wrap {
+        width: 25rem;
+        border-radius: 100%;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+    &__orb-banner {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.329);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 1rem;
+        font-size: 3rem;
+
+    }
+    &__orb-desc {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    &__orbs-text-wrap {
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    &__about-wrap {
+        margin-top: 2rem;
+    }
+    &__about-wrap-inner {
+        width: 70%;
+        display: inline-block;
+    }
+    &__about-title-wrap {
+        border-bottom: 2px solid rgb(184, 182, 182);
+        width: 100%;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__about-title {
+        font-size: 3rem;
+    }
+    &__about-desc {
+        font-size: 1.5rem;
+    }
+    &__resume {
+        font-size: 1.5rem;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        position: relative;
+    }
+}
+.btn::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s;
+}
+.btn:active::after {
+    transform: scale(2);
+    opacity: 0;
+}

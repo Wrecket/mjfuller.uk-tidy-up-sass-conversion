@@ -1,0 +1,75 @@
+.header {
+    &__wrap {
+        background-image: url("../../../img/clouds.jpg");
+        height: 30rem;
+        width: 100%;
+        background-attachment: fixed;
+        position: relative;
+    }
+    &__name {
+        font-size: 9rem;
+    }
+    &__title {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        backface-visibility: hidden;
+        
+    }
+    &__title-1 {
+        font-size: 3rem;
+        color: white;
+        transform: translateX(15rem);
+        text-align: left;
+        display: block;
+    }
+    &__title-2 {
+        font-size: 7rem;
+        color: white;
+        animation: moveInLeft .75s ease-in;
+        display: block;
+    }
+    &__title-3 {
+        color: white;
+        line-break: loose;
+        font-size: 2.6rem;
+        animation: moveInRight .75s ease-in;
+        display: block;
+    }
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+.navbar {
+    height: 6rem;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(15rem);
+    }
+    80% {
+        transform: translateX(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-15rem);
+    }
+    80% {
+        transform: translateX(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
