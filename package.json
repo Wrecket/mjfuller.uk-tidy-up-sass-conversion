@@ -1,7 +1,6 @@
 {
   "name": "mjfuller.uk",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "directories": {
     "doc": "docs"
@@ -14,5 +13,14 @@
     "compiler": "node-sass css/scss/style2.scss css/style2.css -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wrecket/mjfuller.ukfinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wrecket/mjfuller.ukfinal/issues"
+  },
+  "homepage": "https://github.com/Wrecket/mjfuller.ukfinal#readme",
+  "description": ""
 }
