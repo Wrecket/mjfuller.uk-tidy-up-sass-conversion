@@ -5,6 +5,7 @@
         width: 100%;
         background-attachment: fixed;
         position: relative;
+        overflow: hidden;
     }
     &__name {
         font-size: 9rem;
@@ -43,8 +44,18 @@
 .nav-link {
     font-size: 1.5rem;
 }
+.nav-link:hover {
+    color: orange!important;
+    transition: 2s all;
+    backface-visibility: hidden;
+    font-weight: bold;
+}
 .navbar {
-    height: 6rem;
+    position: static;
+    padding: 2rem;
+}
+nav {
+    z-index: 100;
 }
 
 @keyframes moveInLeft {
@@ -73,3 +84,139 @@
         transform: translate(0);
     }
 }
+
+
+@media (max-width: 1024px) {
+    .header {
+        &__wrap {
+            background-image: url("../../../img/clouds.jpg");
+            height: 30rem;
+            width: 100%;
+            background-attachment: fixed;
+            position: relative;
+        }
+        &__name {
+            font-size: 8rem;
+        }
+        &__title {
+            position: absolute;
+            bottom: 4rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            backface-visibility: hidden;
+            padding-bottom: 1rem;
+        }
+        &__title-1 {
+            font-size: 4rem;
+            color: white;
+            transform: translateX(15rem);
+            text-align: left;
+            display: block;
+        }
+        &__title-2 {
+            font-size: 4rem;
+            color: white;
+            animation: moveInLeft .75s ease-in;
+            display: block;
+            white-space: nowrap;
+        }
+        &__title-3 {
+            color: white;
+            line-break: loose;
+            font-size: 3rem;
+            animation: moveInRight .75s ease-in;
+            display: block;
+        }
+    }
+}
+@media (max-width: 850px) {
+    .header {
+        &__wrap {
+            background-image: url("../../../img/clouds.jpg");
+            height: 30rem;
+            width: 100%;
+            background-attachment: fixed;
+            position: relative;
+        }
+        &__name {
+            font-size: 5rem;
+        }
+        &__title {
+            position: absolute;
+            bottom: 4rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            backface-visibility: hidden;
+            padding-bottom: 4rem;
+        }
+        &__title-1 {
+            font-size: 2rem;
+            color: white;
+            transform: translateX(15rem);
+            text-align: left;
+            display: block;
+        }
+        &__title-2 {
+            font-size: 2rem;
+            color: white;
+            animation: moveInLeft .75s ease-in;
+            display: block;
+            white-space: nowrap;
+        }
+        &__title-3 {
+            color: white;
+            line-break: loose;
+            font-size: 2rem;
+            animation: moveInRight .75s ease-in;
+            display: block;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .header {
+        &__wrap {
+            background-image: url("../../../img/clouds.jpg");
+            height: 30rem;
+            width: 100%;
+            background-attachment: fixed;
+            position: relative;
+        }
+        &__name {
+            font-size: 5rem;
+        }
+        &__title {
+            position: absolute;
+            bottom: 4rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            backface-visibility: hidden;
+            padding-bottom: 4rem;
+        }
+        &__title-1 {
+            font-size: 2rem;
+            color: white;
+            transform: translateX(15rem);
+            text-align: left;
+            display: block;
+        }
+        &__title-2 {
+            font-size: 2rem;
+            color: white;
+            animation: moveInLeft .75s ease-in;
+            display: block;
+            white-space: nowrap;
+        }
+        &__title-3 {
+            color: white;
+            line-break: loose;
+            font-size: 2rem;
+            animation: moveInRight .75s ease-in;
+            display: block;
+        }
+    }
+}
+
+

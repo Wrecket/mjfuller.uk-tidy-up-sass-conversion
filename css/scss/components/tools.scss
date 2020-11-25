@@ -1,0 +1,98 @@
+.tools {
+    &__starline {
+        display: flex;  
+    }
+    &__star {
+        width: 30px;
+        height: 30px;
+    }
+    &__skill-icon {
+        width: 50px;
+    }
+    &__text-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 2rem;
+    }
+    &__text-desc {
+        font-size: 1.5rem;
+    }
+    &__tools-mob-bottom {
+        text-align: left;
+    }
+    &__skills-container {
+        padding: 20rem 2rem;
+        background-color: rgba(180, 179, 179, 0.329);
+    }
+    &__wrap-inner {
+        padding: 3rem;
+    }
+    &__contact-box {
+        justify-content: center;
+        align-items: center;
+    }
+    &__connect {
+        font-size: 5rem;
+    }
+    &__connect-title {
+        font-size: 3rem;
+    }
+    &__connect-desc {
+        font-size: 1.5rem;
+    }
+    &__contact-wrap {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .tools {
+        &__star {
+            width: 2rem;
+            height: 2rem;
+        }
+        &__starry {
+            justify-content: center;
+        }
+        &__skill-icon {
+            width: 5rem;
+        }
+        &__starline {
+            display: block;
+        }
+        &__text-desc {
+            padding-bottom: 5rem;
+            padding-left: 2rem;
+        }
+        &__text-title {
+            padding-left: 2rem;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .tools {
+        &__star {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &__skill-icon {
+            width: 4rem;
+        }
+        &__starline {
+            display: block;
+        }
+    }
+}
+@media (max-width: 850px) {
+    .tools {
+        &__star {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        &__skill-icon {
+            width: 8rem;
+        }
+    }
+    
+}

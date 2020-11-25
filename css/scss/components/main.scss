@@ -39,6 +39,7 @@
     }
     &__about-wrap {
         margin-top: 2rem;
+        padding-bottom: 2rem;
     }
     &__about-wrap-inner {
         width: 70%;
@@ -79,4 +80,33 @@
 .btn:active::after {
     transform: scale(2);
     opacity: 0;
+}
+
+@media (max-width: 850px) {
+    .main {
+        &__about-wrap {
+            margin: 5rem auto;
+        }
+        &__orb-img-wrap {
+            width: 15rem;
+            border-radius: 100%;
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 1rem; }
+    }
+}
+@media (max-width: 1366px) {
+    .main {
+        &__about-wrap {
+            margin: 5rem auto;
+        }
+        &__orb-img-wrap {
+            width: 25rem;
+            border-radius: 100%;
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 1rem; }
+    }
 }

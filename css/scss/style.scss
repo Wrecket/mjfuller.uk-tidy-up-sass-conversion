@@ -1,6 +1,7 @@
 @import 'components/header',
         'components/main',
-        'components/projects';
+        'components/projects',
+        'components/tools';
 
 * {
     margin: 0;
@@ -14,9 +15,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.7;
-    color: #777;
+    color: rgb(110, 110, 110);
     box-sizing: border-box; 
-    transition: 5s all;
 }
 .emph {
     color:rgb(255, 196, 0);
@@ -31,6 +31,11 @@ body {
     width: 100%;
     height: .5rem;
     background-color: white;
+}
+.greybar {
+    width: 100%;
+    height: .5rem;
+    background-color: rgba(180, 179, 179, 0.329);
 }
 .center {
     justify-content: center;

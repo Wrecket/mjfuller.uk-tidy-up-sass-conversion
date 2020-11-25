@@ -1,11 +1,16 @@
 .project {
     &__wrap {
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         background-image: url("../../../img/clouds.jpg");
         background-size: cover;
         background-attachment: fixed;
         position: relative;
-        transition: 10s all;
+        overflow: hidden;
+    }
+    &__padder {
+        height: 35rem;
+        display: none;
     }
     &__title-wrap {
         text-align: right;
@@ -23,12 +28,14 @@
     &__phone {
         width: 15rem;
         position: absolute;
+        bottom: 0;
     }
     &__phone:active {
         opacity: 0;
     }
     &__btn {
         position: absolute;
+        font-size: 2rem;
         bottom: 0;
         width: 100%;
     }
@@ -37,6 +44,7 @@
         display: inline-block;
         text-align: right;
         justify-content: flex-end;
+        margin-right: 2rem;
     }
     &__desc-script {
         color: black;
@@ -45,43 +53,77 @@
     }
 }
 
-#id {
-    transition: all 10s;
+#projects {
+    -webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+    backface-visibility: hidden;
+    overflow: hidden;
 }
 .phone1 {
     top: 10%;
     left: 15%;
+    -webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
 }
 .x1 {
-    animation: MoveUpDown 3s linear infinite;
+    animation: MoveUpDown 8s linear infinite;
     backface-visibility: hidden;
 }
 .phone2 {
     top: 35%;
     left: 25%;
     transform: rotate(10deg);
+    -webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
 }
 .x2 {
-    animation: MoveUpDown2 3s linear infinite;
+    animation: MoveUpDown2 10s linear infinite;
     backface-visibility: hidden;
 }
 .phone3 {
     top: 25%;
     left: 3%;
     transform: rotate(-10deg);
+    -webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
 }
 .x3 {
-    animation: MoveUpDown3 3s linear infinite;
+    animation: MoveUpDown3 6s linear infinite;
     backface-visibility: hidden;
 }
 .phone4 {
     top: 60%;
     left: 13%;
     transform: rotate(3deg);
+    -webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
 }
 .x4 {
-    animation: MoveUpDown4 3s linear infinite;
+    animation: MoveUpDown4 9s linear infinite;
     backface-visibility: hidden;
+}
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 3s;
 }
 
 @keyframes MoveUpDown {
@@ -140,3 +182,214 @@
         transform: translateY(0) rotate(0);
     }
   }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media (max-width: 1366px) {
+    .project {
+        &__phone {
+            width: 13rem;
+            position: absolute;
+        }
+        &__title {
+            font-size: 8rem;
+        }
+        &__img-script {
+            width: 60%;
+            margin-top: -2rem;
+        }
+        &__desc-script {
+            color: black;
+            font-size: 2rem;
+            padding: 3rem 2rem 0 25%;
+            position: static;
+            width: 100%;
+
+        }
+        &__btn {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    
+
+}
+@media (max-width: 1024px) {
+    .project {
+        &__phone {
+            width: 10rem;
+            position: absolute;
+        }
+        &__title {
+            font-size: 6rem;
+        }
+        &__img-script {
+            width: 90%;
+            margin-top: -2rem;
+        }
+        &__desc-script {
+            color: black;
+            font-size: 1.5rem;
+            padding: 3rem 2rem 0 20%;
+            position: static;
+            width: 100%;
+
+        }
+        &__btn {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        &__padder {
+            height: 35rem;
+            display: block;
+        }
+    }
+    .phone1 {
+        top: auto;
+        bottom: 7%;
+        left: 3%;
+    }
+    .phone2 {
+        top: auto;
+        bottom: 7%;
+        left: 20%;
+    }
+    .phone3 {
+        top: auto;
+        bottom: 7%;
+        left: 37%;
+    }
+    .phone4 {
+        top: auto;
+        bottom: 7%;
+        left: 54%;
+    }
+
+}
+@media (max-width: 800px) {
+    .project {
+        &__padder {
+            height: 35rem;
+            display: none;
+        }
+        &__phone {
+            width: 10rem;
+            position: absolute;
+        }
+        &__title {
+            font-size: 4rem;
+        }
+        &__img-script {
+            width: 80%;
+            margin-top: -2rem;
+        }
+        &__desc-script {
+            color: black;
+            font-size: 1.5rem;
+            padding: 2rem 2rem 0 5%;
+            position: absolute;
+            right: 0;
+            width: 90%;
+            top: 50%;
+            transform: translate(0, -50%)
+        }
+    }
+    .phone1 {
+        top: auto;
+        bottom: 7%;
+        left: 3%;
+    }
+    .phone2 {
+        top: auto;
+        bottom: 7%;
+        left: 20%;
+    }
+    .phone3 {
+        top: auto;
+        bottom: 7%;
+        left: 37%;
+    }
+    .phone4 {
+        top: auto;
+        bottom: 7%;
+        left: 54%;
+    }
+
+}
+@media (max-width: 550px) {
+    .project {
+        &__phone {
+            width: 7rem;
+            position: absolute;
+        }
+        &__title {
+            font-size: 4rem;
+        }
+        &__img-script {
+            width: 75%;
+        }
+        &__desc-script {
+            color: black;
+            font-size: 1.2rem;
+            padding: 2rem 2rem 0 5%;
+            top: 55%;
+        }
+    }
+    .phone1 {
+        top: auto;
+        bottom: 7%;
+        left: 3%!important;
+    }
+    .phone2 {
+        top: auto;
+        bottom: 7%;
+        left: 27%!important;
+    }
+    .phone3 {
+        top: auto;
+        bottom: 7%;
+        left: 52%!important;
+    }
+    .phone4 {
+        top: auto;
+        bottom: 7%;
+        left: 75%!important;
+    }
+
+}
+@media (max-width: 375px) {
+    .project {
+        &__desc-script {
+            color: black;
+            font-size: 1.2rem;
+            padding: 2rem 2rem 0 5%;
+            top: 50%;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .project {
+        &__padder {
+            display: block;
+        }
+        &__desc-script {
+            color: black;
+            font-size: 1.2rem;
+            padding: 2rem 2rem 0 5%;
+            top: 62%;
+        }
+    }
+}

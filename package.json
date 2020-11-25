@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "compiler": "node-sass css/scss/style2.scss css/style2.css -w"
+    "compiler": "node-sass css/scss/style.scss css/style.css -w"
   },
   "author": "",
   "license": "ISC",
