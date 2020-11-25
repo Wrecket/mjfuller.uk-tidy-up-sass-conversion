@@ -378,6 +378,10 @@
             padding: 2rem 2rem 0 5%;
             top: 50%;
         }
+        &__padder2 {
+            display: block;
+            height: 50rem;
+        }
     }
 }
 @media (max-width: 320px) {
