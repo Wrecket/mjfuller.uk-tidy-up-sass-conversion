@@ -197,7 +197,13 @@ nav {
   overflow: hidden;
   display: inline-block;
   position: relative;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  transition: .5s all;
+  box-shadow: grey 0px 0px 5px; }
+
+.main__orb-img-wrap:hover {
+  transform: scale(1.1);
+  box-shadow: #4d4d4d 0px 0px 30px; }
 
 .main__orb-banner {
   position: absolute;

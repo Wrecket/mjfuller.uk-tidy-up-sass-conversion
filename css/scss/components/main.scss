@@ -20,6 +20,12 @@ $orange: rgb(255, 196, 0);
         display: inline-block;
         position: relative;
         margin-bottom: 1rem;
+        transition: .5s all;
+        box-shadow: grey 0px 0px 5px;
+    }
+    &__orb-img-wrap:hover {
+        transform: scale(1.1);
+        box-shadow: rgb(77, 77, 77) 0px 0px 30px;
     }
     &__orb-banner {
         position: absolute;
