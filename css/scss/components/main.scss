@@ -1,6 +1,10 @@
+
+$grey:  rgba(212, 212, 212, 0.329);
+$orange: rgb(255, 196, 0);
+
 .main {
     &__wrap {
-        background-color: rgba(212, 212, 212, 0.329);
+        background-color: $grey;
         justify-content: center;
         padding: 3rem 0;
     }
@@ -19,7 +23,7 @@
     }
     &__orb-banner {
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.329);
+        background-color: $grey;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -70,7 +74,7 @@
     display: inline-block;
     width: 100%;
     height: 100%;
-    background-color: orange;
+    background-color: $orange;
     position: absolute;
     top:0;
     left: 0;
