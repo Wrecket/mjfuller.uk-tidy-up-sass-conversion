@@ -1,3 +1,53 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem); }
+  80% {
+    transform: translateX(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem); }
+  80% {
+    transform: translateX(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-15rem); }
+  25% {
+    font-size: 25rem; }
+  80% {
+    transform: translateY(8rem);
+    font-size: 5rem; }
+  95% { }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes shake {
+  0% {
+    transform: rotate(-2deg); }
+  10% {
+    transform: rotate(5deg); }
+  12% {
+    transform: rotate(-5deg); }
+  15% {
+    transform: rotate(5deg); }
+  18% {
+    transform: rotate(-5deg) scale(1.5); }
+  20% {
+    transform: rotate(0); }
+  100% {
+    tranform: roate(0); } }
+
 .header__wrap {
   background-image: url("../../../img/clouds.jpg");
   height: 30rem;
@@ -20,28 +70,32 @@
 .header__title-1 {
   font-size: 3rem;
   color: white;
-  transform: translateX(15rem);
   text-align: left;
-  display: block; }
+  display: block;
+  animation: moveInTop .75s ease-in-out .5s;
+  animation-fill-mode: backwards;
+  text-align: center; }
 
 .header__title-2 {
   font-size: 7rem;
   color: white;
-  animation: moveInLeft .75s ease-in;
-  display: block; }
+  animation: moveInLeft 1s ease-in 1.7s;
+  display: block;
+  animation-fill-mode: backwards; }
 
 .header__title-3 {
   color: white;
   line-break: loose;
   font-size: 2.6rem;
-  animation: moveInRight .75s ease-in;
-  display: block; }
+  animation: moveInRight 1s ease-in 1.7s;
+  display: block;
+  animation-fill-mode: backwards; }
 
 .nav-link {
   font-size: 1.5rem; }
 
 .nav-link:hover {
-  color: orange !important;
+  color: #ffc400 !important;
   transition: 2s all;
   backface-visibility: hidden;
   font-weight: bold; }
@@ -52,26 +106,6 @@
 
 nav {
   z-index: 100; }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(15rem); }
-  80% {
-    transform: translateX(-3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-15rem); }
-  80% {
-    transform: translateX(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
 
 @media (max-width: 1024px) {
   .header__wrap {
@@ -296,7 +330,8 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  clip-path: polygon(0 0, 47% 0, 50% 6%, 53% 0, 100% 0, 100% 100%, 0 100%); }
 
 .project__padder {
   height: 35rem;
@@ -643,7 +678,9 @@ nav {
   align-items: center; }
 
 .tools__connect {
-  font-size: 5rem; }
+  font-size: 5rem;
+  animation: shake 5s infinite 3s;
+  display: inline-block; }
 
 .tools__connect-title {
   font-size: 3rem; }
