@@ -86,14 +86,11 @@ nav {
         &__title-1 {
             font-size: 4rem;
             color: white;
-            transform: translateX(15rem);
-            text-align: left;
             display: block;
         }
         &__title-2 {
             font-size: 4rem;
             color: white;
-            animation: moveInLeft .75s ease-in;
             display: block;
             white-space: nowrap;
         }
@@ -101,7 +98,6 @@ nav {
             color: white;
             line-break: loose;
             font-size: 3rem;
-            animation: moveInRight .75s ease-in;
             display: block;
         }
     }
@@ -130,14 +126,11 @@ nav {
         &__title-1 {
             font-size: 2rem;
             color: white;
-            transform: translateX(15rem);
-            text-align: left;
             display: block;
         }
         &__title-2 {
             font-size: 2rem;
             color: white;
-            animation: moveInLeft .75s ease-in;
             display: block;
             white-space: nowrap;
         }
@@ -145,7 +138,6 @@ nav {
             color: white;
             line-break: loose;
             font-size: 2rem;
-            animation: moveInRight .75s ease-in;
             display: block;
         }
     }
@@ -174,14 +166,11 @@ nav {
         &__title-1 {
             font-size: 2rem;
             color: white;
-            transform: translateX(15rem);
-            text-align: left;
             display: block;
         }
         &__title-2 {
             font-size: 2rem;
             color: white;
-            animation: moveInLeft .75s ease-in;
             display: block;
             white-space: nowrap;
         }
@@ -189,7 +178,6 @@ nav {
             color: white;
             line-break: loose;
             font-size: 2rem;
-            animation: moveInRight .75s ease-in;
             display: block;
         }
     }

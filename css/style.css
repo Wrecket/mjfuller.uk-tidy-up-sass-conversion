@@ -127,20 +127,16 @@ nav {
   .header__title-1 {
     font-size: 4rem;
     color: white;
-    transform: translateX(15rem);
-    text-align: left;
     display: block; }
   .header__title-2 {
     font-size: 4rem;
     color: white;
-    animation: moveInLeft .75s ease-in;
     display: block;
     white-space: nowrap; }
   .header__title-3 {
     color: white;
     line-break: loose;
     font-size: 3rem;
-    animation: moveInRight .75s ease-in;
     display: block; } }
 
 @media (max-width: 850px) {
@@ -163,20 +159,16 @@ nav {
   .header__title-1 {
     font-size: 2rem;
     color: white;
-    transform: translateX(15rem);
-    text-align: left;
     display: block; }
   .header__title-2 {
     font-size: 2rem;
     color: white;
-    animation: moveInLeft .75s ease-in;
     display: block;
     white-space: nowrap; }
   .header__title-3 {
     color: white;
     line-break: loose;
     font-size: 2rem;
-    animation: moveInRight .75s ease-in;
     display: block; } }
 
 @media (max-width: 550px) {
@@ -199,20 +191,16 @@ nav {
   .header__title-1 {
     font-size: 2rem;
     color: white;
-    transform: translateX(15rem);
-    text-align: left;
     display: block; }
   .header__title-2 {
     font-size: 2rem;
     color: white;
-    animation: moveInLeft .75s ease-in;
     display: block;
     white-space: nowrap; }
   .header__title-3 {
     color: white;
     line-break: loose;
     font-size: 2rem;
-    animation: moveInRight .75s ease-in;
     display: block; } }
 
 .main__wrap {
@@ -330,8 +318,7 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden;
-  clip-path: polygon(0 0, 47% 0, 50% 6%, 53% 0, 100% 0, 100% 100%, 0 100%); }
+  overflow: hidden; }
 
 .project__padder {
   height: 35rem;
