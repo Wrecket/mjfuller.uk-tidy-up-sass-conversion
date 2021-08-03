@@ -11,15 +11,15 @@ const nametop = document.querySelector(".nametop");
 
 const projects = {
     x1 : {
-        name: "Feather<span class='emph'>wold</span>",
-        img: '<a target="blank" href="https://wrecket.github.io/Featherwold-new-final/"><img id="x1" class="project img-fluid" src="img/featherdeskmob.jpg" alt="featherwold"></a>',
-        description: "<p>Featherwold is an <span class='emph'>E-commerce</span> site, built and designed following the guidelines of a customer request. The site's purpose is to sell artisan bespoke cushions and fabrics. Featherwold was built from the ground up, using bootstrap, html, CSS, Javascript, and the logo/graphics created on Photoshop.<br><span class='emph'>Please note - This is a work in progress.</span></p>",
-        button: "<a target='blank' href='https://wrecket.github.io/Featherwold-new-final/'><button type='button' class='btn project__btn btn-warning'>Click to view</button></a>"
+        name: "Play<span class='emph'>waze</span>",
+        img: '<a target="blank" href="https://playwaze.com/"><img id="x1" class="project img-fluid" src="img/playwaze.jpg" alt="Playwaze"></a>',
+        description: "<p>I worked as a <span class='emph'>front-end developer</span> at Playwaze, focusing on mobile <span class='emph'>responsive</span> behaviour, the creation of new pages, <span class='emph'>UX/UI</span> and content implementation and creation. A large part of this role was translating designs on paper over to a <span class='emph'>functional</span> layout. Skills used: C#, Razor, Jquery, Javascript, CSS, HTML, Github Extensions, all on an MVC Framework.</p>",
+        button: "<a target='blank' href='https://playwaze.com/'><button type='button' class='btn project__btn btn-warning'>Click to view</button></a>"
     },
     x2 : {
-        name: "Grandma's Cookbook <span class='emph'>(G.M.C.B)</span>",
-        img: '<a target="blank" href="https://wrecket.github.io/grandmas-cookbook-original/"><img id="x2" class="project img-fluid" src="img/gmcb.JPG" alt="GMCB"></a>',
-        description: "<p>Grandma's Cookbook is an online recipe-book, built and designed following the guidelines of a customer request.The site's purpose is an easy-to-use website for an elderly client, and was built from the ground up, using html, CSS and Javascript.<br> <span class='emph'>Please note - This is a work in progress.</span></p>",
+        name: "Fantasy<span class='emph'> Road</span>",
+        img: '<a target="blank" href="https://wrecket.github.io/Fantasy-Road-comic-book-store/"><img id="x2" class="project img-fluid" src="img/fantasyroad.jpg" alt="Fantasy Road Comic book store"></a>',
+        description: "<p>Fantasy Road is an online <span class='emph'>ecommerce</span> platform, built and designed as a personal project. The site's purpose is an easy-to-use online store used for the buying and selling of comic books as a registered LTD company, This is <span class='emph'>fully functioning</span> and was built from the ground up, using html, CSS with SASS / Bootstrap 4 and Javascript with <span class='emph'>Jquery</span>.</p>",
         button: "<a target='blank' href='https://wrecket.github.io/grandmas-cookbook-original/'><button type='button' class='btn project__btn btn-warning'>Click to view</button></a>"
     },
     x3 : {
